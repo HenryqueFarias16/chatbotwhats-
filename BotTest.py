@@ -21,7 +21,7 @@ for i, horario in enumerate(df["horario"]): #i = indice do cliente
     loja = df.loc[i,"loja"]
     horario = df.loc[i,"horario"]
     #converter texto para formato URL
-    texto = urllib.parse.quote(f"Ola {pessoas}, Apoio Security informa que o sistema de alarme localizado no(a) {loja} está desativado. estava agendado para ser acionado as {horario}, caso já tenhaa ativado desconsidere essa mensagem. ")
+    texto = urllib.parse.quote(f"Ola {pessoas}, sou assistente virtual informa que o sistema de alarme localizado no(a) {loja} está desativado. estava agendado para ser acionado as {horario}, caso já tenhaa ativado desconsidere essa mensagem. ")
     #cria o link para enviar as mensagens 
     link = f"https://web.whatsapp.com/send?phone={numero}&text={texto}"
     #abre novo link para enviar as mensagens 
